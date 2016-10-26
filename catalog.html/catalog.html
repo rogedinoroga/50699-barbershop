@@ -51,91 +51,110 @@
             </ul>
         </div>
 
+        
         <div class="left_column">
-            <h2>ПРОИЗВОДИТЕЛИ:</h2>
-            <form action="#" method="post">
-                <!-- в данном случае какое правильное значение атрибута method должно быть? -->
-                <label id="name_1">
-                    <input type="checkbox" name="name_1" checked>Baxter of California</label>
-                <label id="name_2">
-                    <input type="checkbox" name="name_2">Mr Natty</label>
-                <label id="name_3">
-                    <input type="checkbox" name="name_3" checked>Suavecito</label>
-                <label id="name_4">
-                    <input type="checkbox" name="name_4">Malin+Goetz</label>
-                <label id="name_5">
-                    <input type="checkbox" name="name_5">Murray’s</label>
-                <label id="name_6">
-                    <input type="checkbox" name="name_6" checked>American Crew</label>
+            <form action="#" method="get">
+                <fieldset>
+                    <legend>ПРОИЗВОДИТЕЛИ:</legend>
+                    <div class="form-item">
+                        <input type="checkbox" name="product_name_1" id="product_1" checked>
+                        <label for="product_1">Baxter of California</label>
+                    </div>
+                    <div class="form-item">
+                        <input type="checkbox" name="product_name_2" id="product_2" checked>
+                        <label for="product_2">Baxter of California</label>
+                    </div>
+                    <div class="form-item">
+                        <input type="checkbox" name="product_name_3" id="product_3" checked>
+                        <label for="product_3">Baxter of California</label>
+                    </div>
+                    <div class="form-item">
+                        <input type="checkbox" name="product_name_4" id="product_4" checked>
+                        <label for="product_4">Baxter of California</label>
+                    </div>
+                    <div class="form-item">
+                        <input type="checkbox" name="product_name_5" id="product_5" checked>
+                        <label for="product_5">Baxter of California</label>
+                    </div>
+                    <div class="form-item">
+                        <input type="checkbox" name="product_name_6" id="product_6" checked>
+                        <label for="product_6">Baxter of California</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>ГРУППЫ ТОВАРОВ:</legend>
+                    <div>
+                        <input type="checkbox" name="product_groups_1" id="groups_1">
+                        <label for="groups_1">Бритвенные принадлежности</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="product_groups_2" id="groups_2" checked>
+                        <label for="groups_2">Средства для ухода</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="product_groups_3" id="groups_3">
+                        <label for="groups_3">Аксессуары</label>
+                    </div>
+                </fieldset>
+
+                <input type="submit" value="Показать">
             </form>
-            <h2>ГРУППЫ ТОВАРОВ:</h2>
-            <form action="#" method="post">
-                <label id="product_groups_1">
-                    <input type="checkbox" name="product_groups_1">Бритвенные принадлежности</label>
-                <label id="product_groups_2">
-                    <input type="checkbox" name="product_groups_2" checked>Средства для ухода</label>
-                <label id="product_groups_3">
-                    <input type="checkbox" name="product_groups_3">Аксессуары</label>
-            </form>
-            <button class="show" type="button"></button>
-        </div>
+        </div>    
+        
 
         <div class="right_column">
             <article class="products">
-                <img src="img/photo-1.jpg" width="" height="" alt="">
-                <span class="nomination">Набор для путешествий<br></span> <!-- что лучше тут использовать <span> или <div> -->
-                <span class="product_name">«BAXTER OF CALIFORNIA»</span>
-                <span class="price">2 900 РУБ.</span>
-                <a class="btn" href="#">купить</a> <!-- или же будет лучше использовать тут <button class="btn">? -->
-            </article>
-
-            <!-- посмотри пожалуйста эти два варианта, в первом я разбила наименование и название продукта на два разных спана, а во втором нет. как лучше? -->
-
-            <article class="products">
-                <img src="img/photo-1.jpg" width="" height="" alt="">
-                <span class="product_name">Набор для путешествий<br> «BAXTER OF CALIFORNIA»</span>
-                <span class="price">2 900 РУБ.</span>
-                <a class="btn" href="#">купить</a>
+                <a href="#"><div class="product_picture"><img src="img_1.jpg" width="" height="" alt=""></div>
+                <div class="product_name">Набор для путешествий<br> «BAXTER OF CALIFORNIA»</div></a>
+                <div class="buy">
+                    <div class="price">2 900 РУБ.</div>
+                    <a class="btn" href="#">купить</a>
+                </div>
             </article>
 
             <article class="products">
-                <img src="img/photo-2.jpg" width="" height="" alt="">
-                <span class="nomination">Увлажняющий кондиционер<br></span>
-                <span class="product_name">«BAXTER OF CALIFORNIA»</span>
-                <span class="price">750 РУБ.</span>
-                <a class="btn" href="#">купить</a>
+                <a href="#"><div class="product_picture"><img src="img_2.jpg" width="" height="" alt=""></div>
+                <div class="product_name">Увлажняющий кондиционер<br> «BAXTER OF CALIFORNIA»</div></a>
+                <div class="buy">
+                    <div class="price">750 РУБ.</div>
+                    <a class="btn" href="#">купить</a>
+                </div>
             </article>
 
             <article class="products">
-                <img src="img/photo-3.jpg" width="" height="" alt="">
-                <span class="nomination">Гель для волос<br></span>
-                <span class="product_name">«SUAVECITO»</span>
-                <span class="price">290 РУБ.</span>
-                <a class="btn" href="#">купить</a>
+                <a href="#"><div class="product_picture"><img src="img_3.jpg" width="" height="" alt=""></div>
+                <div class="product_name">Гель для волос<br> «SUAVECITO»</div></a>
+                <div class="buy">
+                    <div class="price">290 РУБ.</div>
+                    <a class="btn" href="#">купить</a>
+                </div>
             </article>
 
             <article class="products">
-                <img src="img/photo-4.jpg" width="" height="" alt="">
-                <span class="nomination">Глина для укладки волос<br></span>
-                <span class="product_name">«AMERICAN CREW»</span>
-                <span class="price">500 РУБ.</span>
-                <a class="btn" href="#">купить</a>
+                <a href="#"><div class="product_picture"><img src="img_4.jpg" width="" height="" alt=""></div>
+                <div class="product_name">Глина для укладки волос<br> «AMERICAN CREW»</div></a>
+                <div class="buy">
+                    <div class="price">500 РУБ.</div>
+                    <a class="btn" href="#">купить</a>
+                </div>
             </article>
 
             <article class="products">
-                <img src="img/photo-5.jpg" width="" height="" alt="">
-                <span class="nomination">Гель для волос<br></span>
-                <span class="product_name">«AMERICAN CREW»</span>
-                <span class="price">300 РУБ.</span>
-                <a class="btn" href="#">купить</a>
+                <a href="#"><div class="product_picture"><img src="img_5.jpg" width="" height="" alt=""></div>
+                <div class="product_name">Гель для волос<br> «AMERICAN CREW»</div></a>
+                <div class="buy">
+                    <div class="price">300 РУБ.</div>
+                    <a class="btn" href="#">купить</a>
+                </div>
             </article>
 
             <article class="products">
-                <img src="img/photo-6.jpg" width="" height="" alt="">
-                <span class="nomination">Набор для бритья<br></span>
-                <span class="product_name">«BAXTER OF CALIFORNIA»</span>
-                <span class="price">3 900 РУБ.</span>
-                <a class="btn" href="#">купить</a>
+                <a href="#"><div class="product_picture"><img src="img_6.jpg" width="" height="" alt=""></div>
+                <div class="product_name">Набор для бритья<br> «BAXTER OF CALIFORNIA»</div></a>
+                <div class="buy">
+                    <div class="price">3 900 РУБ.</div>
+                    <a class="btn" href="#">купить</a>
+                </div>
             </article>
         </div>
 
@@ -157,7 +176,7 @@
                 <br> Телефон: +7(812)666-02-66
             </section>
             <section class="footer-social">
-                <p>Давайте дружить!</p> <!-- Саша когда верстал главную барбершопа юзал <p> для вот таких коротких фраз или вообще для одного слова как например чуть ниже в коде. Это можно делать в новой спецификации? -->
+                <p>Давайте дружить!</p>
                 <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
                 <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
                 <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
