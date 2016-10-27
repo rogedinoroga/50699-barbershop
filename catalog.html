@@ -47,7 +47,7 @@
             <ul>
                 <li><a href="#">главная</a></li>
                 <li><a href="#">магазин</a></li>
-                <li><a href="#">средства для ухода</a></li>
+                <li><span>средства для ухода</span></li> <!-- воспользовалась твоим советом и прочитала спецификацию пункт 3.3 -->
             </ul>
         </div>
 
@@ -84,15 +84,15 @@
                 <fieldset>
                     <legend>ГРУППЫ ТОВАРОВ:</legend>
                     <div>
-                        <input type="checkbox" name="product_groups_1" id="groups_1">
+                        <input type="radio" name="product_groups" id="groups_1">
                         <label for="groups_1">Бритвенные принадлежности</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="product_groups_2" id="groups_2" checked>
+                        <input type="radio" name="product_groups" id="groups_2" checked>
                         <label for="groups_2">Средства для ухода</label>
                     </div>
                     <div>
-                        <input type="checkbox" name="product_groups_3" id="groups_3">
+                        <input type="radio" name="product_groups" id="groups_3">
                         <label for="groups_3">Аксессуары</label>
                     </div>
                 </fieldset>
@@ -105,7 +105,8 @@
         <div class="right_column">
             <article class="products">
                 <a href="#"><div class="product_picture"><img src="img_1.jpg" width="220" height="165" alt=""></div>
-                <div class="product_name">Набор для путешествий<br> «BAXTER OF CALIFORNIA»</div></a>
+                <div class="product_type">Набор для путешествий</div>
+                <div class="product_name">«BAXTER OF CALIFORNIA»</div></a>
                 <div class="buy">
                     <div class="price">2 900 РУБ.</div>
                     <a class="btn" href="#">купить</a>
@@ -114,7 +115,8 @@
 
             <article class="products">
                 <a href="#"><div class="product_picture"><img src="img_2.jpg" width="220" height="165" alt=""></div>
-                <div class="product_name">Увлажняющий кондиционер<br> «BAXTER OF CALIFORNIA»</div></a>
+                <div class="product_type">Увлажняющий кондиционер</div>
+                <div class="product_name">«BAXTER OF CALIFORNIA»</div></a>
                 <div class="buy">
                     <div class="price">750 РУБ.</div>
                     <a class="btn" href="#">купить</a>
@@ -123,7 +125,8 @@
 
             <article class="products">
                 <a href="#"><div class="product_picture"><img src="img_3.jpg" width="220" height="165" alt=""></div>
-                <div class="product_name">Гель для волос<br> «SUAVECITO»</div></a>
+                <div class="product_type">Гель для волос</div>
+                <div class="product_name">«SUAVECITO»</div></a>
                 <div class="buy">
                     <div class="price">290 РУБ.</div>
                     <a class="btn" href="#">купить</a>
@@ -132,7 +135,8 @@
 
             <article class="products">
                 <a href="#"><div class="product_picture"><img src="img_4.jpg" width="220" height="165" alt=""></div>
-                <div class="product_name">Глина для укладки волос<br> «AMERICAN CREW»</div></a>
+                <div class="product_type">Глина для укладки волос</div>
+                <div class="product_name">«AMERICAN CREW»</div></a>
                 <div class="buy">
                     <div class="price">500 РУБ.</div>
                     <a class="btn" href="#">купить</a>
@@ -141,7 +145,8 @@
 
             <article class="products">
                 <a href="#"><div class="product_picture"><img src="img_5.jpg" width="220" height="165" alt=""></div>
-                <div class="product_name">Гель для волос<br> «AMERICAN CREW»</div></a>
+                <div class="product_type">Гель для волос</div>
+                <div class="product_name">«AMERICAN CREW»</div></a>
                 <div class="buy">
                     <div class="price">300 РУБ.</div>
                     <a class="btn" href="#">купить</a>
@@ -150,7 +155,8 @@
 
             <article class="products">
                 <a href="#"><div class="product_picture"><img src="img_6.jpg" width="220" height="165" alt=""></div>
-                <div class="product_name">Набор для бритья<br> «BAXTER OF CALIFORNIA»</div></a>
+                <div class="product_type">Набор для бритья</div>
+                <div class="product_name">«BAXTER OF CALIFORNIA»</div></a>
                 <div class="buy">
                     <div class="price">3 900 РУБ.</div>
                     <a class="btn" href="#">купить</a>
@@ -160,7 +166,7 @@
 
         <div class="pagination">
             <a href="#">1</a>
-            <a href="#">2</a>
+            <span>2</span> <!-- спецификация пункт 3.4 -->
             <a href="#">3</a>
             <a href="#">4</a>
         </div>
@@ -176,13 +182,13 @@
                 <br> Телефон: +7(812)666-02-66
             </section>
             <section class="footer-social">
-                <p>Давайте дружить!</p>
+                <div class="title">Давайте дружить!</div>
                 <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
                 <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
                 <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
             </section>
             <section class="footer-copyright">
-                <p>Разработано:</p>
+                <div class="title">Разработано:</div>
                 <a class="develop" href="#">HTML Academy</a>
             </section>
         </div>
